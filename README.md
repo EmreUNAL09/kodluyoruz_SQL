@@ -3,7 +3,8 @@ Patika SQL
 ## SQL Ödev 01 | WHERE ve Mantıksal Operatörler 
 1- film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
-```javascript SELECT title, description FROM film;
+```javascript
+SELECT title, description FROM film;
 ```
 ---
 
