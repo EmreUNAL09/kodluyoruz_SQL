@@ -14,9 +14,9 @@ SELECT * FROM film
 
 3-film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.
 
-SELECT * FROM film
-> WHERE rental_rate = 0.99 AND replacement_cost = 12.99 
- OR replacement_cost = 28.99;
+> SELECT * FROM film
+> WHERE rental_rate = 0.99 AND replacement_cost = 12.99
+> OR replacement_cost = 28.99;
 ---
 
 4-customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?
