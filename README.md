@@ -3,8 +3,8 @@ Patika SQL
 ## SQL Ödev 01 | WHERE ve Mantıksal Operatörler 
 1- film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
-```javascript 
-SELECT title, description FROM film;```
+```javascript SELECT title, description FROM film;
+```
 ---
 
 2-film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
@@ -20,12 +20,15 @@ WHERE length > 60 AND length < 75;
 ```javascript
 SELECT * FROM film
 WHERE rental_rate = 0.99 AND replacement_cost = 12.99
-OR replacement_cost = 28.99;```
+OR replacement_cost = 28.99;
+```
 ---
 
 4-customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?
-```javascript SELECT last_name FROM customer
-WHERE first_name = 'Mary';```
+```javascript
+SELECT last_name FROM customer
+WHERE first_name = 'Mary';
+```
 ---
 
 
