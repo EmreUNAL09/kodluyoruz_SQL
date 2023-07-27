@@ -37,10 +37,10 @@ AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 ---
 ## SQL Ödev 02 | BETWEEN ve IN
 1-film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
-'''javascript
+```javascript
 SELECT * FROM film
 WHERE replacement_cost BETWEEN 12.99 AND 16.99;
-'''
+```
 
 
 
