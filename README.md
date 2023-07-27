@@ -6,14 +6,12 @@ Patika SQL
 SELECT title, description FROM film;
 ```
 ---
-
 2-film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
 ```javascript
 SELECT * FROM film
 WHERE length > 60 AND length < 75;
 ```
 ---
-
 3-film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.
 ```javascript
 SELECT * FROM film
@@ -21,7 +19,6 @@ WHERE rental_rate = 0.99 AND replacement_cost = 12.99
 OR replacement_cost = 28.99;
 ```
 ---
-
 4-customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?
 ```javascript
 SELECT last_name FROM customer
@@ -88,6 +85,32 @@ WHERE title ~~* 'T%T%T%T%';
 ```javascript
 SELECT * FROM film
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
+```
+---
+## SQL Ödev 04 | DISTINCT ve COUNT
+1-film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
+```javascript
+
+```
+---
+2-film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
+```javascript
+
+```
+---
+3-film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+```javascript
+
+```
+---
+4-country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+```javascript
+
+```
+---
+5-city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
+```javascript
+
 ```
 ---
 
