@@ -2,14 +2,12 @@
 Patika SQL
 ## SQL Ödev 01 | WHERE ve Mantıksal Operatörler 
 1- film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
-
 ```javascript
 SELECT title, description FROM film;
 ```
 ---
 
 2-film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
-
 ```javascript
 SELECT * FROM film
 WHERE length > 60 AND length < 75;
@@ -17,7 +15,6 @@ WHERE length > 60 AND length < 75;
 ---
 
 3-film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.
-
 ```javascript
 SELECT * FROM film
 WHERE rental_rate = 0.99 AND replacement_cost = 12.99
@@ -36,9 +33,14 @@ WHERE first_name = 'Mary';
 SELECT * FROM film
 WHERE length <= 50 
 AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
-
 ```
-
+---
+## SQL Ödev 02 | BETWEEN ve IN
+1-film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
+'''javascript
+SELECT * FROM film
+WHERE replacement_cost BETWEEN 12.99 AND 16.99;
+'''
 
 
 
