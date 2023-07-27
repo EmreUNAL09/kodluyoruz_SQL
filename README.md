@@ -60,6 +60,7 @@ WHERE rental_rate IN (0.99, 2.99, 4.99) AND replacement_cost IN (12.99, 15.99, 2
 SELECT country FROM country
 WHERE country LIKE 'A%a';
 ```
+Şöyle de yazılabilir:
 ```javascript
 SELECT country FROM country
 WHERE country ~~ 'A%a';
@@ -77,6 +78,7 @@ WHERE country LIKE '_____%n'
 SELECT title FROM film
 WHERE title ILIKE 'T%T%T%T%';
 ```
+Şöyle de yazılabilir:
 ```javascript
 SELECT title FROM film
 WHERE title ~~* 'T%T%T%T%';
