@@ -100,17 +100,20 @@ SELECT COUNT(DISTINCT replacement_cost) FROM film;
 ---
 3-film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
 ```javascript
-
+SELECT COUNT (*) FROM film
+WHERE title LIKE 'T%' AND rating ='G';
 ```
 ---
 4-country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
 ```javascript
-
+SELECT COUNT(*) FROM country
+WHERE country LIKE '_____';
 ```
 ---
 5-city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
 ```javascript
-
+SELECT COUNT (*) FROM city
+WHERE city ILIKE '%R';
 ```
 ---
 
