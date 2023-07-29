@@ -147,7 +147,7 @@ LIMIT 4;
 ```javascript
 SELECT AVG(rental_rate) FROM film;
 ```
-İki karaktere kadar yuvarlamak için:
+> İki karaktere kadar yuvarlamak için:
 ```javascript
 SELECT ROUND(AVG(rental_rate),2) FROM film;
 ```
