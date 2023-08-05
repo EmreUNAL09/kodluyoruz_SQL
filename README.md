@@ -170,7 +170,7 @@ SELECT COUNT(DISTINCT replacement_cost) FROM film
 WHERE length > 150;
 ```
 ---
-## SQL Ödev 07 | GROUP BY, HAVING
+## SQL Ödev 07 | GROUP BY ve HAVING
 1-film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
 ```javascript
 SELECT rating FROM film
