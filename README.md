@@ -264,8 +264,13 @@ insert into employee (id, name, birthday, email) values (50, 'Nannie Adolf', '20
 ```
 ---
 3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+> id'si 1 olanın name, birthday ve emailini günceller.
 ```javascript
-
+UPDATE employee
+SET name = 'serafettin',
+	birthday = '1983-01-01',
+	email = 'sero@mail.com'
+WHERE id= 1;
 ```
 ---
 4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
