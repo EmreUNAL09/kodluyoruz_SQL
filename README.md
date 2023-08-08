@@ -211,7 +211,56 @@ CREATE TABLE employee (
 ---
 2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 ```javascript
-
+insert into employee (id, name, birthday, email) values (1, 'Gilbertine Eastbrook', '1935-09-12', 'geastbrook0@reddit.com');
+insert into employee (id, name, birthday, email) values (2, 'Farand Bertelmot', '1967-03-14', 'fbertelmot1@icq.com');
+insert into employee (id, name, birthday, email) values (3, 'Geraldine Shemmans', '1936-09-03', 'gshemmans2@ocn.ne.jp');
+insert into employee (id, name, birthday, email) values (4, 'Marianna Bruggen', null, 'mbruggen3@psu.edu');
+insert into employee (id, name, birthday, email) values (5, 'Glynnis Willavoys', '1935-10-31', 'gwillavoys4@chronoengine.com');
+insert into employee (id, name, birthday, email) values (6, 'Krissie Murrell', '2053-03-31', 'kmurrell5@stanford.edu');
+insert into employee (id, name, birthday, email) values (7, 'Tabbatha Gatenby', '1955-03-27', 'tgatenby6@sciencedaily.com');
+insert into employee (id, name, birthday, email) values (8, 'Ivett Bullivant', '2041-09-16', 'ibullivant7@mapquest.com');
+insert into employee (id, name, birthday, email) values (9, 'Hillary Collerd', '2032-07-08', 'hcollerd8@blogger.com');
+insert into employee (id, name, birthday, email) values (10, 'Jerrine Dayne', '2006-03-14', 'jdayne9@loc.gov');
+insert into employee (id, name, birthday, email) values (11, 'Mozes Feathers', '2011-05-19', 'mfeathersa@uol.com.br');
+insert into employee (id, name, birthday, email) values (12, 'Abra Menhenitt', '2015-05-06', 'amenhenittb@samsung.com');
+insert into employee (id, name, birthday, email) values (13, 'Lona Paddingdon', '1963-01-25', 'lpaddingdonc@baidu.com');
+insert into employee (id, name, birthday, email) values (14, 'Stepha Chilley', '1954-03-24', 'schilleyd@yellowpages.com');
+insert into employee (id, name, birthday, email) values (15, 'Magdaia Loveredge', '1997-02-25', 'mloveredgee@twitter.com');
+insert into employee (id, name, birthday, email) values (16, 'Emmery Tinghill', '2094-05-01', 'etinghillf@soup.io');
+insert into employee (id, name, birthday, email) values (17, 'Jobyna Blackwell', null, 'jblackwellg@ehow.com');
+insert into employee (id, name, birthday, email) values (18, 'Courtnay Cuss', '1988-04-07', 'ccussh@timesonline.co.uk');
+insert into employee (id, name, birthday, email) values (19, 'Ethelda Zoephel', null, 'ezoepheli@nsw.gov.au');
+insert into employee (id, name, birthday, email) values (20, 'Arnold Marson', '1949-06-25', 'amarsonj@webeden.co.uk');
+insert into employee (id, name, birthday, email) values (21, 'Alvina Rodolphe', '2045-01-26', 'arodolphek@meetup.com');
+insert into employee (id, name, birthday, email) values (22, 'Ezra De la Barre', '1981-10-11', 'edel@marriott.com');
+insert into employee (id, name, birthday, email) values (23, 'Murial Mingotti', '2079-10-24', 'mmingottim@ted.com');
+insert into employee (id, name, birthday, email) values (24, 'Jarad Sarrell', '2027-04-12', 'jsarrelln@liveinternet.ru');
+insert into employee (id, name, birthday, email) values (25, 'Brunhilde Geeson', '2026-03-09', 'bgeesono@surveymonkey.com');
+insert into employee (id, name, birthday, email) values (26, 'Juliann Goodbanne', null, 'jgoodbannep@dropbox.com');
+insert into employee (id, name, birthday, email) values (27, 'Robena Okenfold', null, 'rokenfoldq@live.com');
+insert into employee (id, name, birthday, email) values (28, 'Clarette Frankiewicz', null, 'cfrankiewiczr@sbwire.com');
+insert into employee (id, name, birthday, email) values (29, 'Andeee Ajam', null, 'aajams@odnoklassniki.ru');
+insert into employee (id, name, birthday, email) values (30, 'Marita Blakely', null, 'mblakelyt@unc.edu');
+insert into employee (id, name, birthday, email) values (31, 'Bordy Scare', '2023-08-18', 'bscareu@posterous.com');
+insert into employee (id, name, birthday, email) values (32, 'Dukie Buxy', '2083-04-17', 'dbuxyv@google.com.au');
+insert into employee (id, name, birthday, email) values (33, 'Juditha Finlan', '1965-12-18', 'jfinlanw@disqus.com');
+insert into employee (id, name, birthday, email) values (34, 'Sherwynd Peche', null, 'spechex@wired.com');
+insert into employee (id, name, birthday, email) values (35, 'Talia Siveter', '1945-11-06', 'tsivetery@mit.edu');
+insert into employee (id, name, birthday, email) values (36, 'Maryl Epgrave', '2070-03-29', 'mepgravez@webmd.com');
+insert into employee (id, name, birthday, email) values (37, 'Quincey Penner', '1974-11-04', 'qpenner10@uiuc.edu');
+insert into employee (id, name, birthday, email) values (38, 'Sukey Pollie', '1944-09-30', 'spollie11@unicef.org');
+insert into employee (id, name, birthday, email) values (39, 'Kenton Orbell', '2019-04-05', 'korbell12@sohu.com');
+insert into employee (id, name, birthday, email) values (40, 'Elli Shama', '2087-04-30', 'eshama13@businessweek.com');
+insert into employee (id, name, birthday, email) values (41, 'Aurelea Ledington', null, 'aledington14@google.com.au');
+insert into employee (id, name, birthday, email) values (42, 'Mellisa Benge', '1935-10-31', 'mbenge15@google.pl');
+insert into employee (id, name, birthday, email) values (43, 'Siana Paolotto', '1919-05-07', 'spaolotto16@uol.com.br');
+insert into employee (id, name, birthday, email) values (44, 'Rodge Blumire', '1925-05-13', 'rblumire17@uol.com.br');
+insert into employee (id, name, birthday, email) values (45, 'Ariella Primrose', null, 'aprimrose18@addtoany.com');
+insert into employee (id, name, birthday, email) values (46, 'Nike Vinall', '1903-03-30', 'nvinall19@instagram.com');
+insert into employee (id, name, birthday, email) values (47, 'Kerry Davidy', null, 'kdavidy1a@economist.com');
+insert into employee (id, name, birthday, email) values (48, 'Bride Stearndale', '2081-04-04', 'bstearndale1b@nydailynews.com');
+insert into employee (id, name, birthday, email) values (49, 'Tedra Woollhead', '2097-05-14', 'twoollhead1c@4shared.com');
+insert into employee (id, name, birthday, email) values (50, 'Alejandra Trye', '1971-03-29', 'atrye1d@soup.io');
 ```
 ---
 3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
