@@ -268,9 +268,33 @@ insert into employee (id, name, birthday, email) values (50, 'Nannie Adolf', '20
 ```javascript
 UPDATE employee
 SET name = 'serafettin',
-	birthday = '1983-01-01',
-	email = 'sero@mail.com'
+    birthday = '1983-01-01',
+    email = 'sero@mail.com'
 WHERE id= 1;
+```
+> ismi Daphna Dobing olanı, ismi XXXXXXXXXX olacak şekilde değiştirir.
+```javascript
+UPDATE employee
+SET name = 'XXXXXXXXXX'
+WHERE name = 'Daphna Dobing';
+```
+> ismi Kally Balazot olanın emailini bal@mail.com olarak değiştirir.
+```javascript
+UPDATE employee
+SET email = 'bal@mail.com'
+WHERE name = 'Kally Balazot';
+```
+> birthday, 2014-10-16 olanı, ismi YYYYYYYYYY olacak şekilde değiştirir.
+```javascript
+UPDATE employee
+SET name = 'YYYYYYYYYY'
+WHERE birthday = '2014-10-16';
+```
+> emaili hodonnelly1b@qq.com olanın birthdayini 1983-01-01 olarak değiştirir.
+```javascript
+UPDATE employee
+SET birthday = '1983-01-01'
+WHERE email = 'hodonnelly1b@qq.com';
 ```
 ---
 4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
