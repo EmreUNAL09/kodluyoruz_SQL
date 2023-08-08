@@ -299,6 +299,25 @@ WHERE email = 'hodonnelly1b@qq.com';
 ---
 4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 ```javascript
-
+DELETE FROM employee
+WHERE name = 'Skell Guess';
+```
+```javascript
+DELETE FROM employee
+WHERE birthday = '2044-04-24';
+```
+```javascript
+DELETE FROM employee
+WHERE birthday >= '2010-01-01';
+```
+```javascript
+DELETE FROM employee
+WHERE name LIKE 'A%'
+RETURNING *;
+```
+```javascript
+DELETE FROM employee
+WHERE id = 3 AND name LIKE 'M%'
+RETURNING *;
 ```
 ---
