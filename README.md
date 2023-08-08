@@ -198,3 +198,29 @@ ORDER BY COUNT(*) DESC
 LIMIT 1;
 ```
 ---
+## SQL Ödev 08 | Tablo Oluşturmak - Silmek ve Verileri Güncellemek - Silmek
+1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+```javascript
+CREATE TABLE employee (
+	id INTEGER, 
+	name VARCHAR(50), 
+	birthday DATE, 
+	email VARCHAR(100)
+);
+```
+---
+2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+```javascript
+
+```
+---
+3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+```javascript
+
+```
+---
+4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+```javascript
+
+```
+---
