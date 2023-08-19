@@ -437,7 +437,10 @@ ORDER BY film_id;
 ---
 4-payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
 ```javascript
-
+SELECT customer_id, COUNT(*) AS alışveriş_sayısı
+FROM payment
+GROUP BY customer_id
+ORDER BY alışveriş_sayısı DESC;
 ```
 ---
 
