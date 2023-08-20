@@ -443,7 +443,7 @@ GROUP BY customer_id
 ORDER BY alışveriş_sayısı DESC;
 ```
 ---
-## SQL Tekrar Çalışması:
+## SQL Tekrar Dersi:
 Örnek Çalışma: isminde en az 4 tane e veya E bulunan kaç tane film vardır?
 ```javascript
 SELECT COUNT(*) FROM film
@@ -483,7 +483,47 @@ ORDER BY SUM(amount) DESC
 LIMIT 1;
 ```
 ---
-
+## SQL Son Çalışma Soruları
+film tablosundan 'K' karakteri ile başlayan en uzun ve replacement_cost u en düşük 4 filmi sıralayınız.
+```javascript
+SELECT title, length, replacement_cost FROM film
+WHERE title LIKE 'K%'
+ORDER BY length DESC, replacement_cost ASC
+LIMIT 4;
+```
+---
+film tablosunda içerisinden en fazla sayıda film bulunduran rating kategorisi hangisidir?
+```javascript
+SELECT rating, COUNT(rating) FROM film
+GROUP BY rating
+ORDER BY COUNT(rating) DESC
+LIMIT 1;
+```
+---
+cutomer tablosunda en çok alışveriş yapan müşterinin adı nedir?
+```javascript
+SELECT customer.first_name, customer.last_name, COUNT(payment.customer_id) FROM customer
+JOIN payment ON customer.customer_id = payment.customer_id
+GROUP BY customer.first_name, customer.last_name
+ORDER BY COUNT(payment.customer_id) DESC
+LIMIT 1;
+```
+---
+category tablosundan kategori isimlerini ve kategori başına düşen film sayılarını sıralayınız.
+```javascript
+SELECT category.name, COUNT(*) FROM category
+JOIN film_category On category.category_id = film_category.category_id
+JOIN film ON film_category.film_id = film.film_id
+GROUP BY category.name
+ORDER BY COUNT(*) DESC;
+```
+---
+film tablosunda isminde en az 4 adet 'e' veya 'E' karakteri bulunan kaç tane film vardır?
+```javascript
+SELECT COUNT(*) FROM film
+WHERE title ILIKE '%e%e%e%e%';
+```
+---
 
 
 
