@@ -450,7 +450,7 @@ SELECT COUNT(*) FROM film
 WHERE title ILIKE '%e%e%e%e%';
 ```
 ---
-Örnek Çalışma: Önek Çalışma:kategori ismlerini ve kategori başına düşen film sayısını yazınız.(film tablosu ile kategori tablosu arasında doğrudan bir bağlantı olmadığı için bağlantıyı film_category tablosu üzerinden yapıyoruz.)
+Örnek Çalışma: kategori ismlerini ve kategori başına düşen film sayısını yazınız.(film tablosu ile kategori tablosu arasında doğrudan bir bağlantı olmadığı için bağlantıyı film_category tablosu üzerinden yapıyoruz.)
 ```javascript
 SELECT COUNT(*), category.name FROM category
 JOIN film_category On category.category_id = film_category.category_id
