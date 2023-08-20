@@ -443,5 +443,48 @@ GROUP BY customer_id
 ORDER BY alışveriş_sayısı DESC;
 ```
 ---
+## SQL Tekrar Çalışması:
+Örnek Çalışma: isminde en az 4 tane e veya E bulunan kaç tane film vardır?
+```javascript
+SELECT COUNT(*) FROM film
+WHERE title ILIKE '%e%e%e%e%';
+```
+---
+Örnek Çalışma: Önek Çalışma:kategori ismlerini ve kategori başına düşen film sayısını yazınız.(film tablosu ile kategori tablosu arasında doğrudan bir bağlantı olmadığı için bağlantıyı film_category tablosu üzerinden yapıyoruz.)
+```javascript
+SELECT COUNT(*), category.name FROM category
+JOIN film_category On category.category_id = film_category.category_id
+JOIN film ON film.film_id = film_category.film_id
+GROUP BY category.name;
+```
+---
+Örnek Çalışma: En çok film bulunan rating kategorisi hangisidir?
+```javascript
+SELECT rating, COUNT(*) FROM film
+GROUP BY rating
+ORDER BY count DESC
+LIMIT 1;
+```
+---
+Örnek Çalışma: film tablosunda 'K' karakteri ile başlayan en uzun ve replacement_cost en az olan 3 filmi sıralayınız.
+```javascript
+SELECT title, length, replacement_cost FROM film
+WHERE title LIKE 'K%'
+ORDER BY length DESC, replacement_cost ASC
+LIMIT 3;
+```
+---
+Örnek Çalışma: en çok alışveriş yapan müşterinin adı nedir?
+```javascript
+SELECT SUM(amount), customer.first_name, customer.last_name FROM payment
+JOIN customer ON customer.customer_id = payment.customer_id
+GROUP BY payment.customer_id, customer.first_name, customer.last_name
+ORDER BY SUM(amount) DESC
+LIMIT 1;
+```
+---
+
+
+
 
 
